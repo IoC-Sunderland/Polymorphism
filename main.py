@@ -36,8 +36,7 @@ print('He' + 'llo') # Concatenation
 
 ### Method Overriding
 class Parent(): 
-      
-    
+        
     def __init__(self): 
         self.value = "Parent's __init__"
           
@@ -46,12 +45,11 @@ class Parent():
           
 # Define child class 
 class Child(Parent): 
-      
-    
+        
     def __init__(self): 
         self.value = "Child's __init__"
           
-    
+    # Same method name as parent class
     def show(self): 
         print(self.value) 
           
@@ -62,3 +60,15 @@ obj2 = Child() # Child's __init__
   
 obj1.show() 
 obj2.show()
+
+
+### Method Overloading
+def x(a):
+    return a
+
+# Same function name different signature
+def x(y, z): 
+    return y + z
+
+print(x(1)) # TypeError
+# print(x(2,3)) # 5
