@@ -15,7 +15,7 @@ float myMethod(float x)
 double myMethod(double x, double y)
 ```
 
-Python doesn't support Method Overloading. If you define two methods with same name the last one defined will be called.
+Python doesn't support Method Overloading. If you define two methods with the same name the last one defined will be called.
 
 See example: <strong>Method Overloading</strong>
 
